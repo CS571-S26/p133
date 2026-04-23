@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <p style={{ textAlign: "center", marginTop: "20px" }}>
-      Random Decision Maker Project
-    </p>
+    <footer className="site-footer">
+      <p className="mb-0">Random Decision Maker Project</p>
+    </footer>
   );
 }
 
