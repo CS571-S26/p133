@@ -12,19 +12,22 @@ function OptionForm(props) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Row className="g-2">
-        <Col md={8}>
-          <Form.Control
-            type="text"
-            placeholder="Enter an option"
-            value={optionText}
-            onChange={(event) => setOptionText(event.target.value)}
-          />
-        </Col>
-        <Col md={4} className="d-grid">
-          <Button type="submit">Add Option</Button>
-        </Col>
-      </Row>
+      <Form.Group controlId="optionInput">
+        <Form.Label>Add an Option</Form.Label>
+        <Row className="g-2">
+          <Col md={8}>
+            <Form.Control
+              type="text"
+              placeholder="Enter an option"
+              value={optionText}
+              onChange={(event) => setOptionText(event.target.value)}
+            />
+          </Col>
+          <Col md={4} className="d-grid">
+            <Button type="submit">Add Option</Button>
+          </Col>
+        </Row>
+      </Form.Group>
     </Form>
   );
 }
